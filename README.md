@@ -1,18 +1,18 @@
-# Busy.js
+# ezlite.js
 
-A lightweight JavaScript library for Busy
+A lightweight JavaScript library for ezlite
 
 ### Install
 ```
-npm install busyjs --save
+npm install ezlite.js --save
 ```
 
 ### Usage
 ```js
-var busy = require('busyjs');
+var ezlite = require('ezlite.js');
 
 // Init WebSocket client
-var client = new busy.Client('wss://gtg.steem.house:8090');
+var client = new ezlite.Client('wss://peer.ezira.io:8090');
 
 // Get accounts
 client.call('get_accounts', ['fabien'], function(err, result) {
@@ -22,15 +22,15 @@ client.call('get_accounts', ['fabien'], function(err, result) {
 
 ### Promises
 
-You can also use Busy.js with promises by promisifying busy with
+You can also use ezlite.js with promises by promisifying ezlite with
 [bluebird](https://github.com/petkaantonov/bluebird) as in:
 
 ```js
-var busy = require('busyjs');
-bluebird.promisifyAll(busy.Client.prototype);
+var ezlite = require('ezlite.js');
+bluebird.promisifyAll(ezlite.Client.prototype);
 ```
 
-It'll add a *Async* to all busy functions (e.g. return client.callAsync().then())
+It'll add a *Async* to all ezlite functions (e.g. return client.callAsync().then())
 
 ```js
 // So instead of writing client.request('get_accounts', ['fabien'], cb); you have to write:

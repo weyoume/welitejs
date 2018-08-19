@@ -1,16 +1,18 @@
 {
-  "name": "busyjs",
+  "name": "ezlite.js",
   "version": "1.0.2",
-  "description": "A lightweight JavaScript library for Busy",
+  "description": "A lightweight JavaScript library for the Ezira Protocol",
   "repository": {
-    "url": "git://github.com/busyorg/busyjs.git",
+    "url": "git://github.com/eziranetwork/ezlite.js.git",
     "type": "git"
   },
   "license": "MIT",
-  "main": "dist/busy.cjs.js",
-  "module": "dist/busy.es.js",
-  "browser": "dist/busy.umd.js",
-  "files": ["dist"],
+  "main": "dist/ezlite.cjs.js",
+  "module": "dist/ezlite.es.js",
+  "browser": "dist/ezlite.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
