@@ -1,18 +1,18 @@
-# ezlite.js
+# welightjs
 
-A lightweight JavaScript library for ezlite
+A lightweight JavaScript library for welightjs
 
 ### Install
 ```
-npm install ezlite.js --save
+npm install welightjs --save
 ```
 
 ### Usage
 ```js
-var ezlite = require('ezlite.js');
+var welightjs = require('welightjs');
 
 // Init WebSocket client
-var client = new ezlite.Client('wss://peer.ezira.io:8090');
+var client = new welightjs.Client('wss://peer.ezira.io:8090');
 
 // Get accounts
 client.call('get_accounts', ['fabien'], function(err, result) {
@@ -22,15 +22,15 @@ client.call('get_accounts', ['fabien'], function(err, result) {
 
 ### Promises
 
-You can also use ezlite.js with promises by promisifying ezlite with
+You can also use welightjs with promises by promisifying welightjs with
 [bluebird](https://github.com/petkaantonov/bluebird) as in:
 
 ```js
-var ezlite = require('ezlite.js');
-bluebird.promisifyAll(ezlite.Client.prototype);
+var welightjs = require('welightjs');
+bluebird.promisifyAll(welightjs.Client.prototype);
 ```
 
-It'll add a *Async* to all ezlite functions (e.g. return client.callAsync().then())
+It'll add a *Async* to all welightjs functions (e.g. return client.callAsync().then())
 
 ```js
 // So instead of writing client.request('get_accounts', ['fabien'], cb); you have to write:

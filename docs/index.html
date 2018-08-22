@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ezlite.js</title>
-  <script src="../dist/ezlite.min.js"></script>
+  <title>welightjs</title>
+  <script src="../dist/welightjs.min.js"></script>
 </head>
 <body>
 
 <script>
   // Init WebSocket client
-  var client = new ezlite.Client('wss://peer.ezira.io:8090');
+  var client = new welightjs.Client('wss://peer.ezira.io:8090');
 
   // Get accounts
   client.call('get_accounts', ['fabien'], function(err, result) {

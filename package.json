@@ -1,15 +1,15 @@
 {
-  "name": "ezlite.js",
+  "name": "welightjs",
   "version": "1.0.2",
   "description": "A lightweight JavaScript library for the Ezira Protocol",
   "repository": {
-    "url": "git://github.com/eziranetwork/ezlite.js.git",
+    "url": "git://github.com/eziranetwork/welightjs.git",
     "type": "git"
   },
   "license": "MIT",
-  "main": "dist/ezlite.cjs.js",
-  "module": "dist/ezlite.es.js",
-  "browser": "dist/ezlite.umd.js",
+  "main": "dist/welightjs.cjs.js",
+  "module": "dist/welightjs.es.js",
+  "browser": "dist/welightjs.umd.js",
   "files": [
     "dist"
   ],
