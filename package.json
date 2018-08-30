@@ -1,7 +1,7 @@
 {
   "name": "welightjs",
   "version": "1.0.2",
-  "description": "A lightweight JavaScript library for the Ezira Protocol",
+  "description": "A lightweight JavaScript library for the Protocol",
   "repository": {
     "url": "git://github.com/eziranetwork/welightjs.git",
     "type": "git"
