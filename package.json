@@ -1,22 +1,24 @@
 {
-  "name": "welightjs",
-  "version": "1.0.2",
+  "name": "welitejs",
+  "version": "1.1.11",
   "description": "A lightweight JavaScript library for the Protocol",
   "repository": {
-    "url": "git://github.com/eziranetwork/welightjs.git",
+    "url": "git://github.com/eziranetwork/welitejs.git",
     "type": "git"
   },
   "license": "MIT",
-  "main": "dist/welightjs.cjs.js",
-  "module": "dist/welightjs.es.js",
-  "browser": "dist/welightjs.umd.js",
+  "main": "dist/welitejs.cjs.js",
+  "module": "dist/welitejs.es.js",
+  "browser": "dist/welitejs.umd.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "prepare": "npm run build"
+		"prepare": "npm run build",
+		"push" : "./scripts/push.sh",
+		"pull" : "./scripts/pull.sh"
   },
   "dependencies": {
     "ws": "^4.0.0"

@@ -1,18 +1,18 @@
-# welightjs
+# welitejs
 
-A lightweight JavaScript library for welightjs
+A lightweight JavaScript library for welitejs
 
 ### Install
 ```
-npm install welightjs --save
+npm install welitejs --save
 ```
 
 ### Usage
 ```js
-var welightjs = require('welightjs');
+var welitejs = require('welitejs');
 
 // Init WebSocket client
-var client = new welightjs.Client('wss://peer.ezira.io:8090');
+var client = new welitejs.Client('wss://peer.weyoume.io:8090');
 
 // Get accounts
 client.call('get_accounts', ['fabien'], function(err, result) {
@@ -22,15 +22,15 @@ client.call('get_accounts', ['fabien'], function(err, result) {
 
 ### Promises
 
-You can also use welightjs with promises by promisifying welightjs with
+You can also use welitejs with promises by promisifying welitejs with
 [bluebird](https://github.com/petkaantonov/bluebird) as in:
 
 ```js
-var welightjs = require('welightjs');
-bluebird.promisifyAll(welightjs.Client.prototype);
+var welitejs = require('welitejs');
+bluebird.promisifyAll(welitejs.Client.prototype);
 ```
 
-It'll add a *Async* to all welightjs functions (e.g. return client.callAsync().then())
+It'll add a *Async* to all welitejs functions (e.g. return client.callAsync().then())
 
 ```js
 // So instead of writing client.request('get_accounts', ['fabien'], cb); you have to write:
