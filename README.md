@@ -1,39 +1,37 @@
-![](http://img.badgesize.io/busyorg/busy.js/master/dist/busy.min.js.svg)
+# welitejs
 
-# Busy.js
-
-A lightweight JavaScript library for Busy
+A lightweight JavaScript library for WeYouMe
 
 ### Install
 ```
-npm install busyjs --save
+npm install welitejs --save
 ```
 
 ### Usage
 ```js
-var busy = require('busyjs');
+var welitejs = require('welitejs');
 
 // Init WebSocket client
-var client = new busy.Client('wss://gtg.steem.house:8090');
+var client = new welitejs.Client('wss://peer.WeYouMe.io:8090');
 
 // Get accounts
 client.call('get_accounts', ['fabien'], function(err, result) {
   console.log(err, result);
 });
 ```
-[See more examples](/test/test.js)
 
 ### Promises
 
-You can also use Busy.js with promises by promisifying busy with
+You can also use welitejs with promises by promisifying welitejs with
 [bluebird](https://github.com/petkaantonov/bluebird) as in:
 
 ```js
-var busy = require('busyjs');
-bluebird.promisifyAll(busy.Client.prototype);
+var welitejs = require('welitejs');
+bluebird.promisifyAll(welitejs.Client.prototype);
 ```
 
-It'll add a *Async* to all busy functions (e.g. return client.callAsync().then())
+It'll add a *Async* to all welitejs functions (e.g. return client.callAsync().then())
+
 ```js
 // So instead of writing client.request('get_accounts', ['fabien'], cb); you have to write:
 return client.callAsync('get_accounts', ['fabien']).then(function(result) {
