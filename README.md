@@ -1,6 +1,6 @@
 # welitejs
 
-A lightweight JavaScript library for welitejs
+A lightweight JavaScript library for WeYouMe
 
 ### Install
 ```
