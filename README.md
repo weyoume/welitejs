@@ -12,7 +12,7 @@ npm install welitejs --save
 var welitejs = require('welitejs');
 
 // Init WebSocket client
-var client = new welitejs.Client('wss://peer.weyoume.io:8090');
+var client = new welitejs.Client('wss://peer.WeYouMe.io:8090');
 
 // Get accounts
 client.call('get_accounts', ['fabien'], function(err, result) {

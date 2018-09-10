@@ -1,9 +1,9 @@
 {
   "name": "welitejs",
-  "version": "1.1.11",
+  "version": "1.1.111",
   "description": "A lightweight JavaScript library for the Protocol",
   "repository": {
-    "url": "git://github.com/eziranetwork/welitejs.git",
+    "url": "git://github.com/WeYouMe/welitejs.git",
     "type": "git"
   },
   "license": "MIT",
